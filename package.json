@@ -1,0 +1,33 @@
+{
+  "name": "@thrivecoin/key-rotate",
+  "version": "1.0.0",
+  "description": "Generic key rotating logic for instances",
+  "main": "index.js",
+  "scripts": {
+    "format": "standard --fix",
+    "lint": "standard",
+    "test": "npm run lint && npm run unit",
+    "unit": "NODE_ENV=test mocha ./test"
+  },
+  "keywords": [
+    "key",
+    "rotate"
+  ],
+  "homepage": "https://github.com/ThriveCoin/thc-key-rotate-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThriveCoin/thc-key-rotate-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThriveCoin/thc-key-rotate-js/issues"
+  },
+  "author": "vigan.abd",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "standard": "^17.1.0"
+  }
+}
