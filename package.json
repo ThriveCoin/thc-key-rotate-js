@@ -4,10 +4,11 @@
   "description": "Generic key rotating logic for instances",
   "main": "index.js",
   "scripts": {
+    "coverage": "nyc --reporter=html mocha ./test/**",
     "format": "standard --fix",
     "lint": "standard",
     "test": "npm run lint && npm run unit",
-    "unit": "NODE_ENV=test mocha ./test"
+    "unit": "NODE_ENV=test mocha ./test/**"
   },
   "keywords": [
     "key",
@@ -28,6 +29,8 @@
   },
   "devDependencies": {
     "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^15.1.2",
     "standard": "^17.1.0"
   }
 }
